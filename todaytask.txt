@@ -1,0 +1,17 @@
+def vowel(n):
+    m=['a','e','i','o','u','y']
+    sum=0
+    for i in n:
+        c=0
+        for j in i:
+            if j in m:
+                c=c+1
+        if c%2==0:
+            sum =sum+2
+        else:
+            sum=sum+1
+    return sum
+        
+    
+n=input("Enter the value: ").lower().split()
+print(vowel(n))
